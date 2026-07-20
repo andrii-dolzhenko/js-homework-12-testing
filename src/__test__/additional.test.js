@@ -1,5 +1,6 @@
 import { handleButtonClick, trackMousePosition, setupEventDelegation } from '../main'
 
+// Тест 1: перевірка повторних натискань кнопки
 describe('handleButtonClick', () => {
   test('logs the message after two button clicks', () => {
     document.body.innerHTML = '<button id="testButton">Click me</button>'
@@ -16,6 +17,7 @@ describe('handleButtonClick', () => {
   })
 })
 
+// Тест 2: перевірка нульових координат миші
 describe('trackMousePosition', () => {
   test('logs zero mouse coordinates', () => {
     trackMousePosition()
@@ -33,6 +35,7 @@ describe('trackMousePosition', () => {
   })
 })
 
+// Тест 3: перевірка натискання на сам список
 describe('setupEventDelegation', () => {
   test('does not log when the list itself is clicked', () => {
     document.body.innerHTML = `
