@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-GitHub Pages deployment is pending.
+[Open the live demo](https://andrii-dolzhenko.github.io/js-homework-12-testing/)
 
 Repository: [andrii-dolzhenko/js-homework-12-testing](https://github.com/andrii-dolzhenko/js-homework-12-testing)
 
