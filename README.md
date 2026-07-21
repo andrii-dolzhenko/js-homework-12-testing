@@ -96,6 +96,7 @@ js-homework-12-testing/
 |   |   |-- task2.test.js
 |   |   `-- task3.test.js
 |   |-- demo.js
+|   |-- favicon.svg
 |   |-- index.html
 |   |-- main.js
 |   `-- style.css
