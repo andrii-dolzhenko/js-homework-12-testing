@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DOM Event Testing — Homework 12</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="hero__label">JavaScript Homework 12</p>
+        <h1 class="hero__title">DOM Event Testing</h1>
+        <p class="hero__description">A small browser demo for button events, mouse tracking and event delegation.</p>
+
+        <div class="hero__status">
+          <span class="hero__status-dot"></span>
+          Open DevTools Console to see the event output
+        </div>
+      </header>
+
+      <section class="tasks" aria-label="DOM event examples">
+        <article class="task-card">
+          <div class="task-card__number">01</div>
+
+          <div class="task-card__content">
+            <p class="task-card__label">Click event</p>
+            <h2 class="task-card__title">Button handler</h2>
+            <p class="task-card__description">Click either button and check the message in the browser console.</p>
+
+            <div class="task-card__actions">
+              <button id="primaryButton" class="button" type="button">Primary button</button>
+
+              <button id="secondaryButton" class="button button--secondary" type="button">Secondary button</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="task-card">
+          <div class="task-card__number">02</div>
+
+          <div class="task-card__content">
+            <p class="task-card__label">Mouse event</p>
+            <h2 class="task-card__title">Mouse position</h2>
+            <p class="task-card__description">
+              Move the mouse across the page. The current X and Y coordinates are logged to the console.
+            </p>
+
+            <div class="mouse-area">
+              <span class="mouse-area__icon" aria-hidden="true">↗</span>
+              <span>Move your cursor here</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="task-card">
+          <div class="task-card__number">03</div>
+
+          <div class="task-card__content">
+            <p class="task-card__label">Event delegation</p>
+            <h2 class="task-card__title">List item clicks</h2>
+            <p class="task-card__description">
+              One event listener is attached to the whole list. Click any item to see its text in the console.
+            </p>
+
+            <ul id="eventList" class="event-list">
+              <li class="event-list__item">Design system</li>
+              <li class="event-list__item">DOM events</li>
+              <li class="event-list__item">Automated tests</li>
+              <li class="event-list__item">GitHub Pages</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <p>Built with HTML, CSS and JavaScript. Tested with Vitest and jsdom.</p>
+        <p>&copy; Andrii Dolzhenko. All Rights Reserved. 2026</p>
+      </footer>
+    </main>
+
+    <script type="module" src="./demo.js"></script>
+  </body>
+</html>
